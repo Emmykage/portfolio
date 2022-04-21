@@ -1,3 +1,110 @@
+.container{
+    width: 375px;
+    
+    
+    margin: 0 auto;
+    background-color: brown;
+    padding: 0;
+}
+
+
 header {
-  display: flex;
+     height: 92px;
+    color: #fff;
+    background-color: #3C3A39;
+    margin: 0;
+    width: 100%;
+    
+  
+  
+}
+
+nav {
+   
+    height: 100%;
+    padding: 8px 14px;
+    
+    margin: 0;
+    
+}
+.app-bar{
+    display: flex;
+    justify-content: space-between;
+    line-height: 47px;
+    ;
+
+}
+header nav .toolbar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.logo a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+.headline{
+    background-color: #1C1A19;
+     width: 100%;
+     padding-top: 120px;
+    padding-bottom: 70px;
+    margin: 0;
+    position: relative;
+}
+.headline h1{
+    font-size: 56px;
+    line-height: 64px;
+    color: #FF6B00;
+    font-family: Crete Round;
+    font-weight: 400;
+    letter-spacing: 0.376px;
+    text-align: left;
+    padding-left: 24px;
+    padding-right: 24px;
+    
+   
+
+}
+.headline h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: roboto;
+    color: #FFF5E1;
+    line-height: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    
+}
+.headline p{
+    color: #FFF5E1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+.headline ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+   
+    margin-bottom: 100px;
+}
+.headline ul li {
+    padding: 4px 8px;
+
+    line-height: 39px;
+    
+    
+}
+.headline ul li img{
+    height: 24px;
+}
+.feeler{
+    position: absolute;
+    right: 0;
+    bottom: 0px;
 }
