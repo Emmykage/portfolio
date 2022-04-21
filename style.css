@@ -7,7 +7,7 @@
 }
 
 header {
-  height: 92px;
+  height: 46px;
   color: #fff;
   background-color: #3c3a39;
   margin: 0;
@@ -20,11 +20,6 @@ nav {
   margin: 0;
 }
 
-.app-bar {
-  display: flex;
-  justify-content: space-between;
-  line-height: 47px;
-}
 
 header nav .toolbar {
   display: flex;
