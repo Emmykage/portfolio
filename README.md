@@ -1,40 +1,69 @@
-Project Name
-Menanya's Portfolio
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-Built With
-HTML and CSS
-Frameworks
-Technologies used
-Live Demo (if available)
-Live Demo Link
+# Menanya Morris' Portfolio
 
-Getting Started
-All informations related to Morris Menanya is included has been add and uploaded to this site, carefully go through differnt sections to learn about his career growth and personal life. you can also leave a message and request for a collaboration or recuitement from the homepage
+> Mobile Skeleton of a web portfolio application 
+
+
+## Built With
+
+- HTML and CSS
+- Git and Github
+
+
+## Live Demo (if available)
+
+Not Available
+
+
+## Getting Started
+
+
 
 
 To get a local copy up and running follow these simple example steps.
 
-Prerequisites
-Setup
-Install
-Usage
-Run tests
-Deployment
-Authors
-👤 Author1
+### Prerequisites
+  None
 
-GitHub: @emmykage
-Twitter: @emmekage
-LinkedIn: https://www.linkedin.com/in/morris-menanya-a51985104/
+### Setup
+Download and view file
+
+### Install
+
+### Usage
+
+### Run tests
+
+### Deployment
+
+
+
+## Authors
+
+👤 **Author1**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [Menanya Morris](https://www.linkedin.com/in/morris-menanya-a51985104/)
+
+
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the issues page.
+Feel free to check the [issues page](../../issues/).
 
-Show your support
+## Show your support
+
 Give a ⭐️ if you like this project!
 
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
