@@ -5,6 +5,10 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+section{
+  padding: 0;
+  background-color: red;
+}
 
 header {
   height: 46px;
@@ -72,11 +76,14 @@ header nav .toolbar {
   padding-left: 24px;
   padding-right: 24px;
 }
-
-.headline ul {
-  display: flex;
+ul{
   list-style: none;
   padding-left: 0;
+}
+.headline ul {
+  display: flex;
+
+  
   margin-bottom: 100px;
 }
 
@@ -89,8 +96,118 @@ header nav .toolbar {
   height: 24px;
 }
 
-.feeler {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+/* work-section */
+
+
+.section-container{
+ 
+  align-items: center;
+  padding-bottom: 24px;
+  background-color: blueviolet;
+  margin-bottom: 24px;;
+ 
+
+}
+
+.work-section-container h2{
+  font-family: 'crete Round', sans-serif;
+  text-align: center;
+  border: 1px solid black;
+  font-weight: 400;
+  font-size: 40px;
+  color: #1C1A19;
+  background-color: green;
+  width: 300px;
+  margin:  24px auto;
+
+}
+ h3{
+  font-family: 'crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  background-color: black;
+
+}
+.work_container{
+  margin: auto;
+  background-color: #fff5e1;
+  display: grid;
+  grid-template-columns: auto;
+}
+.work-item-1{
+  background-color: blue;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.item .write-up {
+  padding-left: 24px;
+  padding-bottom: 30px;
+  
+}
+.item {
+  padding: 84px 12px;
+  
+}
+.item h3{
+   max-width: 295px;
+}
+.item p{
+  font-family: 'inter', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+}
+.item ul{
+  display: flex;
+  list-style: none;
+  background-color: red;
+  padding-left: 0;
+}
+.item ul li{
+    background-color: gray;
+    border: 1px solid gray;
+    padding: 8px;
+    margin-right: 8px;
+       
+}
+.item ul li a{
+  color: #fff;
+}
+.project-btn{
+  padding: 12px 16px;
+  width: 100%;
+  color: #fff;
+  background-color: #ff6b00;
+ 
+}
+
+/* ------------- About us ---------------  */
+.about-section-container{
+  padding: 0px 24px 18px;
+  background-color: #3c3a39;
+}
+.about-me h1{
+  font-family: "crete Round", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 0.31px;
+  line-height: 88px;
+  background-color: green;
+  margin-bottom: 12px;
+}
+.about-section-container .skill-container{
+  display: grid;
+  grid-template-columns: auto;
+}
+.skill {
+  text-align: center;
+}
+.about-section-container ul li{
+  background-color: #ff6b00;
+  margin: 8px 0 ;
+  padding: 8px 12px;
+}
+.skill img{
+  margin-right: 8px;
 }
