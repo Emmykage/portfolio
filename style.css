@@ -1,9 +1,11 @@
 .container {
   width: 375px;
   margin: 0 auto;
-  background-color: brown;
-  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  padding: 0;
 }
 
 header {
@@ -41,7 +43,7 @@ header nav .toolbar {
   position: relative;
 }
 
-.headline h1 {
+h1 {
   font-size: 56px;
   line-height: 64px;
   color: #ff6b00;
@@ -51,6 +53,14 @@ header nav .toolbar {
   text-align: left;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+h3 {
+  font-family: 'crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: white;
 }
 
 .headline h3 {
@@ -63,6 +73,14 @@ header nav .toolbar {
   padding-right: 24px;
 }
 
+p {
+  font-family: 'inter', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  padding: 28px 12px 28px 4px;
+}
+
 .headline p {
   color: #fff5e1;
   font-family: 'poppins', sans-serif;
@@ -73,10 +91,13 @@ header nav .toolbar {
   padding-right: 24px;
 }
 
-.headline ul {
-  display: flex;
+ul {
   list-style: none;
   padding-left: 0;
+}
+
+.headline ul {
+  display: flex;
   margin-bottom: 100px;
 }
 
@@ -85,12 +106,193 @@ header nav .toolbar {
   line-height: 39px;
 }
 
+.skill img {
+  margin-right: 8px;
+}
+
 .headline ul li img {
   height: 24px;
 }
 
-.feeler {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+/* -----------------work-section------------- */
+
+.section-container {
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+hr {
+  width: 80%;
+}
+
+.work-section-container h2 {
+  font-family: 'crete Round', sans-serif;
+  text-align: center;
+  display: flex;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 52px;
+  color: #1c1a19;
+  width: 300px;
+  margin: 154px auto 0;
+}
+
+.work-container {
+  padding: 12px;
+  margin: auto;
+  row-gap: 50px;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+.item .write-up {
+  padding-bottom: 30px;
+}
+
+.item {
+  padding: 150px 0 0;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("image/background_img/Img-Placeholder.png");
+  background-position: center;
+  background-size: contain;
+}
+
+.work-item-1 {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  background-image: none;
+}
+
+.project-btn {
+  display: block;
+  padding: 12px 16px;
+  width: 100%;
+  color: #fff;
+  background-color: #ff6b00;
+  text-align: center;
+  font-size: 18px;
+}
+
+.work-item-1 .project-btn {
+  display: inline;
+}
+
+.item h3 {
+  max-width: 295px;
+}
+
+.write-up p {
+  color: #000;
+  font-weight: 500;
+}
+
+.write-up a,
+.item a {
+  text-decoration: none;
+}
+
+.item ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.item ul li {
+  background-color: gray;
+  border: 1px solid rgb(202, 190, 190);
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.res-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.item ul li a {
+  color: #fff;
+}
+
+.project-btn-1 {
+  display: block;
+  padding: 12px 16px;
+  color: #fff;
+  background-color: #ff6b00;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* ------------- About me ---------------  */
+.abt-sct {
+  background-color: #1c1a19;
+}
+
+.about-section-container {
+  padding: 0 12px 18px;
+  background-image: url("image/background_img/backgroud _group/Group@2x.png");
+  background-size: 148px;
+  background-repeat: no-repeat;
+  background-position: 100% 26%;
+}
+
+.about-me {
+  padding: 0;
+  margin-bottom: 240px;
+}
+
+.res-btn {
+  display: flex;
+  padding: 12px 16px;
+  background-color: #ff6b00;
+  font-size: 18px;
+  color: #fff;
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+}
+
+.res-btn:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.res-btn:active {
+  background-color: #e05304;
+}
+
+.res-btn:disabled {
+  background-color: #f4f1f0;
+}
+
+.about-me h1 {
+  font-family: "crete Round", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 0.31px;
+  line-height: 88px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+section .skill-container {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.skill {
+  text-align: center;
+}
+
+.about-section-container ul li {
+  margin: 8px 0;
+  padding: 8px 12px;
+}
+
+.about-section-container ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
 }
