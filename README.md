@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Menanya Morris' Portfolio
+# MObile Portfolio
 
 > Mobile Skeleton of a web portfolio application 
 
@@ -30,18 +30,20 @@ To get a local copy up and running follow these simple example steps.
 Download and view file
 
 ### Install
+N/A
 
 ### Usage
+N/A
 
 ### Run tests
-
+N/A
 ### Deployment
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 Menanya Morris
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
@@ -50,9 +52,7 @@ Download and view file
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+Thanks to everyone who contributed
 
 ## Show your support
 
@@ -60,10 +60,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Reviewers
+- standUp team
+
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+None
