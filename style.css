@@ -193,16 +193,26 @@ hr {
 }
 
 .item ul {
-  display: flex;
+ 
   list-style: none;
   padding-left: 0;
 }
 
 .item ul li {
+
   background-color: gray;
   border: 1px solid rgb(202, 190, 190);
   padding: 8px;
   margin-right: 8px;
+}
+.item ul li:first-child{
+  float: left;
+}
+.item ul li:nth-child(2){
+  float: left;
+}
+.item ul li:nth-child(3){
+  float: left;
 }
 
 .res-btn a {
