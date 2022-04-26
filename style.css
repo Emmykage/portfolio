@@ -101,6 +101,10 @@ ul {
   margin-bottom: 100px;
 }
 
+.con-links li {
+  padding: 0 10px;
+}
+
 .headline ul li {
   padding: 4px 8px;
   line-height: 39px;
@@ -295,4 +299,93 @@ section .skill-container {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+}
+
+.contact h3 {
+  color: #172b4d;
+  width: 327px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+form {
+  width: 327px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 190px;
+}
+
+form .input {
+  width: 100%;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+form .text-input {
+  border: none;
+}
+
+input {
+  width: 100%;
+  margin: 16px 0 16px 0;
+  padding: 12px 6px 12px;
+  height: 18px;
+  left: 16px;
+  right: 16px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+textarea {
+  width: 100%;
+  height: 88px;
+  margin: 16px 0 16px 0;
+  padding: 12px 6px 12px;
+  background: #fbf8f7;
+  border: none;
+}
+
+.contact button {
+  background: #ff6b00;
+  padding: 12px;
+  width: 131px;
+  height: 48px;
+  margin: auto;
+  font-style: normal;
+  font-weight: 700;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.contact button:hover {
+  color: #ff6b00;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  box-sizing: border-box;
+}
+
+.contact button:active {
+  background-color: #e05304;
+}
+
+.contact button:disabled {
+  background-color: #f4f1f0;
+}
+
+.con-links {
+  display: flex;
+  justify-content: center;
 }
