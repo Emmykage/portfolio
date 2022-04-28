@@ -26,6 +26,10 @@ header nav .toolbar {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+  align-items: center;
+}
+header nav .toolbar ul{
+  display: none;
 }
 
 .logo a {
@@ -123,12 +127,19 @@ ul {
 .section-container {
   align-items: center;
   margin-bottom: 24px;
+  background-color: brown;
 }
 
 hr {
   width: 80%;
+  
 }
 
+.work-section-container{
+  width: 85%;
+  margin: auto;
+  margin-bottom: 48px;
+}
 .work-section-container h2 {
   font-family: 'crete Round', sans-serif;
   text-align: center;
@@ -152,6 +163,13 @@ hr {
 
 .item .write-up {
   padding-bottom: 30px;
+  padding-top: 0;
+  
+}
+.item .write-up h3{
+  margin-top: 0;
+  color: #091E42;
+  padding-top: 0;
 }
 
 .item {
@@ -388,4 +406,189 @@ textarea {
 .con-links {
   display: flex;
   justify-content: center;
+}
+
+
+/* ---------- desktop view----------------- */
+
+@media(min-width:768px){
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+  header nav .toolbar{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;   
+  }
+  header nav .toolbar ul{
+    display: flex;
+    height: 100%;
+    justify-content: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: 1;
+    
+    
+   
+  }
+  
+  header nav .toolbar ul li{
+    display: flex;
+    align-items: center;
+      padding: 8px 34px;
+    
+  }
+  header nav .toolbar ul li a{
+    color: #fff;
+    text-decoration: none;
+
+  }
+  .menu-bar img{
+    display: none;
+  }
+  .headline{
+    display: flex;
+    padding-bottom: 150px;
+    background-image: url(image/background_img/Illustration-header.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 80%;
+    
+  }
+  .headline-body{
+  
+    width: 556px;
+    padding-right: 400px;    
+    order: 99;
+  }
+  .headline-body h1{
+    width: 60%;
+     margin-bottom: 0px;
+    margin-top: 0;
+  }
+  .headline-body p, .headline h3{
+    
+    width: 75%;
+  }
+  .headline-body p{
+    padding-top: 0;
+  }
+  .headlink{
+    margin: 0 24px;
+  }
+  .headlink .social-links{
+    display: block;
+    
+  }
+
+  .work-container {
+    padding-bottom: 128px;
+    grid-template-columns: auto auto auto;
+    gap: 3% 3%;
+    
+    
+  }
+  .work-item-1 {
+    grid-column: 1/4;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: row;
+    background:#e05304;
+    justify-content: space-between;
+    
+  }
+  .work-item-1 img, .work-item-1 .write-up{
+    flex-basis: 49%;
+  }
+  
+ 
+  
+  .abt-sct
+  {
+    margin-top: 0;
+      
+  }
+  .work-section-container .heading {
+    width: 90%;
+    margin-left: 12px;
+    
+    display: flex;
+   align-items: center;
+    
+  }
+  .work-section-container .heading h2{
+    margin-right: 0;
+    width: 365px
+  }
+  .work-section-container .heading hr{
+    align-self:flex-end;
+    margin-left: 0%;
+    margin-top: 0;
+    height: 3px;
+  border: 1px solid none;
+  background-color: #212121;
+  }
+   .about-section-container {
+    background-image: url("image/background_img/desk_Group.svg");
+    background-size: 508px;
+   padding-top: 100px;
+    background-position: 118% 12%;
+   
+    
+  }
+  
+  .about-me{
+    text-align: left;
+    max-width: 556px;
+    
+    margin-bottom: 120px;
+    
+  }
+  .left {
+    margin-left: 204px;
+  }
+  .about-me p{
+    padding-right: 124x;
+    font-size: 20px;
+  }
+  .about-me h1{
+    text-align: left;
+    
+  }
+  section .skill-container {
+   width: 80%;
+    margin: auto;
+    padding: 0;
+    grid-template-columns: auto auto auto;
+  }
+  .skill{
+    padding-left: 0%;
+    text-align: left;
+    }
+    .contact{
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: auto;
+      text-align: left;
+    }
+    
+    .contact hr{
+      width: 100%;
+    }
+    .con-links{
+      text-align: center;
+      margin: auto;
+    }
+    .con-links li{
+      margin: 0% 10px;
+    }
+  
 }
