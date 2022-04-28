@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# MObile Portfolio
+# Mobile Portfolio
 
 > Mobile Skeleton of a web portfolio application 
 
@@ -45,8 +45,8 @@ N/A
 
 👤 Menanya Morris
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- GitHub: [@emmykage](https://github.com/emmykage)
+- Twitter: [@emmykage](https://twitter.com/emmykage)
 - LinkedIn: [Menanya Morris](https://www.linkedin.com/in/morris-menanya-a51985104/)
 
 
