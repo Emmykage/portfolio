@@ -535,11 +535,6 @@ textarea {
     justify-content: space-between;
   }
 
-  .work-item-2 {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-  }
 
   .no-btn button {
     display: none;
@@ -547,6 +542,14 @@ textarea {
 
   .item:nth-child(2) {
     background-image: url(image/Img_Placeholder_2.svg);
+    display: flex;
+    position: relative;
+    height: 450px;
+  }
+
+  .work-item-2 .project-btn {
+    position: absolute;
+    bottom: 0;
   }
 
   .item:nth-child(3) {
