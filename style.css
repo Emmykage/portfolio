@@ -226,16 +226,28 @@ hr {
   display: inline;
 }
 
-.project-btn:hover,.project-btn-1:hover {
+.project-btn-1 {
+  display: block;
+  padding: 12px 16px;
+  color: #fff;
+  background-color: #ff6b00;
+  text-align: center;
+  font-size: 18px;
+}
+
+.project-btn:hover,
+.project-btn-1:hover {
   background-color: #fff5e1;
   color: #ff6b00;
 }
 
-.project-btn:active,.project-btn-1:hover {
+.project-btn:active,
+.project-btn-1:hover {
   background-color: #e05304;
 }
 
-.project-btn:disabled,.project-btn-1:hover {
+.project-btn:disabled,
+.project-btn-1:hover {
   background-color: #f4f1f0;
 }
 
@@ -265,14 +277,7 @@ hr {
   color: #fff;
 }
 
-.project-btn-1 {
-  display: block;
-  padding: 12px 16px;
-  color: #fff;
-  background-color: #ff6b00;
-  text-align: center;
-  font-size: 18px;
-}
+
 
 /* ------------- About me ---------------  */
 .abt-sct {
@@ -549,17 +554,18 @@ textarea {
     position: absolute;
     bottom: 0;
   }
-  .item:hover .project-btn{
-    
+
+  .item:hover .project-btn {
     display: block;
-    
-  }  
+  }
+
   .item .project-btn:hover {
     background-color: #fff5e1;
     color: #ff6b00;
   }
-  .box:hover{
-    box-shadow: 0 0 20px 0 rgba(255, 107, 0 ,0.2);
+
+  .box:hover {
+    box-shadow: 0 0 20px 0 rgba(255, 107, 0, 0.2);
   }
 
   .item:nth-child(3) {
@@ -625,14 +631,15 @@ textarea {
     border: 1px solid none;
     background-color: #212121;
   }
-  .section-container{
+
+  .section-container {
     background-image: url("image/background_img/desk_Group.svg");
     background-size: 508px;
     padding-top: 100px;
     background-position: 100% 12%;
     background-repeat: no-repeat;
-
   }
+
   .about-section-container {
     /* background-image: url("image/background_img/desk_Group.svg"); */
     background-image: none;
@@ -640,19 +647,17 @@ textarea {
 
   .about-me {
     margin: auto;
-    width:80%;
+    width: 80%;
     margin-bottom: 120px;
-    
   }
 
   /* .left {
     margin-left: 144px;
-   
+
     width: 70%;
   } */
 
   .about-me p {
-   
     width: 557px;
     font-size: 20px;
   }
@@ -681,16 +686,17 @@ textarea {
     text-align: left;
     justify-content: left;
   }
-  .contact form{
+
+  .contact form {
     box-sizing: border-box;
-    max-width: 680px; 
+    max-width: 680px;
     flex-basis: 60%;
-    
   }
-  .contact h3{
+
+  .contact h3 {
     text-align: left;
-   flex-basis: 30%;
-   line-height: 30px;
+    flex-basis: 30%;
+    line-height: 30px;
   }
 
   .con-links {
