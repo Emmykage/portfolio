@@ -226,16 +226,16 @@ hr {
   display: inline;
 }
 
-.project-btn:hover {
+.project-btn:hover,.project-btn-1:hover {
   background-color: #fff5e1;
   color: #ff6b00;
 }
 
-.project-btn:active {
+.project-btn:active,.project-btn-1:hover {
   background-color: #e05304;
 }
 
-.project-btn:disabled {
+.project-btn:disabled,.project-btn-1:hover {
   background-color: #f4f1f0;
 }
 
@@ -549,25 +549,43 @@ textarea {
     position: absolute;
     bottom: 0;
   }
+  .item:hover .project-btn{
+    
+    display: block;
+    
+  }  
+  .item .project-btn:hover {
+    background-color: #fff5e1;
+    color: #ff6b00;
+  }
+  .box:hover{
+    box-shadow: 0 0 20px 0 rgba(255, 107, 0 ,0.2);
+  }
 
   .item:nth-child(3) {
     background-image: url(image/Img_Placeholder_3.svg);
+    height: 435px;
+    border: ;
   }
 
   .item:nth-child(4) {
     background-image: url(image/Img_Placeholder_4.svg);
+    height: 435px;
   }
 
   .item:nth-child(5) {
     background-image: url(image/Img_Placeholder_5.svg);
+    height: 435px;
   }
 
   .item:nth-child(6) {
     background-image: url(image/Img_Placeholder_6.svg);
+    height: 435px;
   }
 
   .item:nth-child(7) {
     background-image: url(image/Img_Placeholder_7.svg);
+    height: 435px;
   }
 
   .work-item-1 img,
@@ -607,26 +625,35 @@ textarea {
     border: 1px solid none;
     background-color: #212121;
   }
-
-  .about-section-container {
+  .section-container{
     background-image: url("image/background_img/desk_Group.svg");
     background-size: 508px;
     padding-top: 100px;
-    background-position: 118% 12%;
+    background-position: 100% 12%;
+    background-repeat: no-repeat;
+
+  }
+  .about-section-container {
+    /* background-image: url("image/background_img/desk_Group.svg"); */
+    background-image: none;
   }
 
   .about-me {
-    text-align: left;
-    max-width: 556px;
+    margin: auto;
+    width:80%;
     margin-bottom: 120px;
+    
   }
 
-  .left {
-    margin-left: 204px;
-  }
+  /* .left {
+    margin-left: 144px;
+   
+    width: 70%;
+  } */
 
   .about-me p {
-    padding-right: 14px;
+   
+    width: 557px;
     font-size: 20px;
   }
 
@@ -649,9 +676,21 @@ textarea {
   .contact {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 75%;
     margin: auto;
     text-align: left;
+    justify-content: left;
+  }
+  .contact form{
+    box-sizing: border-box;
+    max-width: 680px; 
+    flex-basis: 60%;
+    
+  }
+  .contact h3{
+    text-align: left;
+   flex-basis: 30%;
+   line-height: 30px;
   }
 
   .con-links {
