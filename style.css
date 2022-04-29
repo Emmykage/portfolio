@@ -357,6 +357,16 @@ section .skill-container {
   font-weight: 500;
 }
 
+.social-links li:hover {
+  background: #e05304;
+  transition: all 0.5s ease-out;
+}
+
+.toolbar ul li a:hover {
+  color: #e05304;
+  transition: all 1s ease-in-out;
+}
+
 form {
   width: 327px;
   margin: auto;
@@ -491,6 +501,20 @@ textarea {
     padding-bottom: 150px;
     background-position: 100% 80%;
     background-size: 558px;
+    animation-name: movebg;
+    animation-duration: 3s;
+  }
+
+  @keyframes movebg {
+    from {
+      background-position: 100% 80%;
+      opacity: 1;
+    }
+
+    to {
+      background-position: 40% 80%;
+      opacity: 0;
+    }
   }
 
   .headline-body {
