@@ -1,7 +1,8 @@
-body{
+body {
   padding: 0;
   margin: auto;
 }
+
 .container {
   width: 375px;
   margin: auto;
@@ -52,7 +53,8 @@ header nav .toolbar {
   background-size: 168px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 56px;
   line-height: 64px;
   color: #ff6b00;
@@ -454,7 +456,6 @@ textarea {
     width: 80%;
     margin: auto;
     margin-left: 124px;
-    
   }
 
   header nav .toolbar ul {
@@ -654,12 +655,6 @@ textarea {
     margin-bottom: 120px;
   }
 
-  /* .left {
-    margin-left: 144px;
-
-    width: 70%;
-  } */
-
   .about-me p {
     width: 557px;
     font-size: 20px;
@@ -689,27 +684,15 @@ textarea {
     text-align: left;
     justify-content: left;
   }
-  .contact h2 {
-    font-size: 56px;
-    line-height: 64px;
-    color: #ff6b00;
-    font-family: 'Crete Round', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.376px;
-    text-align: left;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
 
   .contact form {
     box-sizing: border-box;
     max-width: 680px;
-    flex-basis: 60%;    
+    flex-basis: 60%;
   }
 
-  .contact form button{
+  .contact form button {
     margin-left: 0;
-   
   }
 
   .contact h3 {
