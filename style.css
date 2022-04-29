@@ -277,8 +277,6 @@ hr {
   color: #fff;
 }
 
-
-
 /* ------------- About me ---------------  */
 .abt-sct {
   background-color: #1c1a19;
@@ -571,7 +569,6 @@ textarea {
   .item:nth-child(3) {
     background-image: url(image/Img_Placeholder_3.svg);
     height: 435px;
-    border: ;
   }
 
   .item:nth-child(4) {
