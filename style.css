@@ -226,6 +226,7 @@ hr {
   background-color: #ff6b00;
   text-align: center;
   font-size: 18px;
+  transition: all 0.5s ease-out;
 }
 
 .work-item-1 .project-btn {
@@ -239,6 +240,7 @@ hr {
   background-color: #ff6b00;
   text-align: center;
   font-size: 18px;
+  transition: all 0.5s ease-out;
 }
 
 .project-btn:hover,
@@ -349,6 +351,8 @@ section .skill-container {
 .about-section-container ul li {
   margin: 8px 0;
   padding: 8px 12px;
+  width: 40%;
+  transition: 0.3s;
 }
 
 .about-section-container ul li a {
@@ -357,9 +361,24 @@ section .skill-container {
   font-weight: 500;
 }
 
+.item ul li:hover a {
+  color: #3c3a39;
+  transition: all 0.5s ease-out;
+}
+
 .social-links li:hover {
   background: #e05304;
-  transition: all 0.5s ease-out;
+  transition: all 1.5s ease-out;
+  display: block;
+}
+
+.about-section-container ul li:hover {
+  transform: translateX(10px);
+}
+
+.item ul li:hover {
+  background-color: #fff;
+  border: 1px solid gray;
 }
 
 .toolbar ul li a:hover {
@@ -482,9 +501,28 @@ textarea {
   }
 
   header nav .toolbar ul li {
-    display: flex;
+    display: block;
     align-items: center;
     padding: 8px 34px;
+    margin-right: 12px;
+  }
+
+  header nav .toolbar ul li::after {
+    height: 3px;
+    content: " ";
+    width: 0%;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+    background-color: red;
+  }
+
+  header nav .toolbar ul li:last-child::after {
+    display: none;
+  }
+
+  header nav .toolbar ul li:hover::after {
+    width: 100%;
   }
 
   header nav .toolbar ul li a {
@@ -595,6 +633,7 @@ textarea {
 
   .box:hover {
     box-shadow: 0 0 20px 0 rgba(255, 107, 0, 0.2);
+    transition: all 0.5s ease-out;
   }
 
   .item:nth-child(3) {
