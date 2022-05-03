@@ -732,6 +732,7 @@ textarea {
     margin: auto;
     padding: 0;
     grid-template-columns: auto auto auto;
+    column-gap: 2%;
   }
 
   .skill {
