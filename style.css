@@ -40,7 +40,7 @@ header nav .toolbar {
   color: #fff;
 }
 .logo a:focus{
-  border: 3px solid #fff5e1;
+  outline-color: #f4f1f0;
 
 }
 
