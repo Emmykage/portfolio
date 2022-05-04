@@ -39,6 +39,10 @@ header nav .toolbar {
   text-decoration: none;
   color: #fff;
 }
+.logo a:focus{
+  border: 3px solid #fff5e1;
+
+}
 
 .headline {
   background-color: #1c1a19;
@@ -285,7 +289,9 @@ hr {
 .item ul li a {
   color: #fff;
 }
-
+/* .item ul li a:focus{
+  border: ipx solid black
+} */
 /* ------------- About me ---------------  */
 .abt-sct {
   background-color: #1c1a19;
