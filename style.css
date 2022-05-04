@@ -74,7 +74,7 @@ h3 {
   color: white;
 }
 
-.headline h3 {
+.headline h2 {
   font-size: 24px;
   font-weight: 700;
   font-family: 'roboto', sans-serif;
@@ -223,7 +223,7 @@ hr {
   padding: 12px 16px;
   width: 100%;
   color: #fff;
-  background-color: #ff6b00;
+  background-color: #9c2200;
   text-align: center;
   font-size: 18px;
   transition: all 0.5s ease-out;
@@ -237,7 +237,7 @@ hr {
   display: block;
   padding: 12px 16px;
   color: #fff;
-  background-color: #ff6b00;
+  background-color: #9c2200;
   text-align: center;
   font-size: 18px;
   transition: all 0.5s ease-out;
@@ -246,7 +246,8 @@ hr {
 .project-btn:hover,
 .project-btn-1:hover {
   background-color: #fff5e1;
-  color: #ff6b00;
+  color: #9c2200;
+  border: 1px solid #000;
 }
 
 .project-btn:active,
@@ -270,7 +271,7 @@ hr {
 }
 
 .item ul li {
-  background-color: gray;
+  background-color: rgb(73, 73, 73);
   border: 1px solid rgb(202, 190, 190);
   padding: 8px;
   margin-right: 8px;
@@ -284,6 +285,10 @@ hr {
 .item ul li a {
   color: #fff;
 }
+
+/* .item ul li a:focus{
+  border: ipx solid black
+} */
 
 /* ------------- About me ---------------  */
 .abt-sct {
@@ -306,7 +311,7 @@ hr {
 .res-btn {
   display: flex;
   padding: 12px 16px;
-  background-color: #ff6b00;
+  background-color: #900;
   font-size: 18px;
   color: #fff;
   font-family: "inter", sans-serif;
@@ -318,25 +323,30 @@ hr {
 
 .res-btn:hover {
   background-color: #fff5e1;
-  color: #ff6b00;
+  color: #9c2200;
+}
+
+.res-btn:focus {
+  background-color: #900;
+  color: #f4f1f0;
 }
 
 .res-btn:active {
-  background-color: #e05304;
+  background-color: #fff5e1;
+  color: #000;
 }
 
 .res-btn:disabled {
   background-color: #f4f1f0;
 }
 
-.about-me h1 {
+.about-me h2 {
   font-family: "crete Round", sans-serif;
   font-weight: 400;
   font-size: 60px;
   letter-spacing: 0.31px;
   line-height: 88px;
   margin-bottom: 12px;
-  text-align: center;
 }
 
 section .skill-container {
@@ -359,6 +369,10 @@ section .skill-container {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+}
+
+.logo a:focus {
+  outline-color: #f4f1f0;
 }
 
 .item ul li:hover a {
@@ -431,7 +445,7 @@ textarea {
 }
 
 .contact button {
-  background: #ff6b00;
+  background: #9c2200;
   padding: 12px;
   width: 131px;
   height: 48px;
@@ -445,14 +459,15 @@ textarea {
 }
 
 .contact button:hover {
-  color: #ff6b00;
+  color: #900;
   background: #fff5e1;
-  border: 1px solid #f55800;
+  border: 1px solid #900;
   box-sizing: border-box;
 }
 
 .contact button:active {
-  background-color: #e05304;
+  background-color: #9c2200;
+  color: #fff;
 }
 
 .contact button:disabled {
@@ -628,7 +643,7 @@ textarea {
 
   .item .project-btn:hover {
     background-color: #fff5e1;
-    color: #ff6b00;
+    color: #900;
   }
 
   .box:hover {
@@ -637,27 +652,27 @@ textarea {
   }
 
   .item:nth-child(3) {
-    background-image: url(image/Img_Placeholder_3.svg);
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(image/Img_Placeholder_3.svg);
     height: 435px;
   }
 
   .item:nth-child(4) {
-    background-image: url(image/Img_Placeholder_4.svg);
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(image/Img_Placeholder_4.svg);
     height: 435px;
   }
 
   .item:nth-child(5) {
-    background-image: url(image/Img_Placeholder_5.svg);
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(image/Img_Placeholder_5.svg);
     height: 435px;
   }
 
   .item:nth-child(6) {
-    background-image: url(image/Img_Placeholder_6.svg);
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(image/Img_Placeholder_6.svg);
     height: 435px;
   }
 
   .item:nth-child(7) {
-    background-image: url(image/Img_Placeholder_7.svg);
+    background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(image/Img_Placeholder_7.svg);
     height: 435px;
   }
 
