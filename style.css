@@ -39,10 +39,6 @@ header nav .toolbar {
   text-decoration: none;
   color: #fff;
 }
-.logo a:focus{
-  outline-color: #f4f1f0;
-
-}
 
 .headline {
   background-color: #1c1a19;
@@ -289,9 +285,11 @@ hr {
 .item ul li a {
   color: #fff;
 }
+
 /* .item ul li a:focus{
   border: ipx solid black
 } */
+
 /* ------------- About me ---------------  */
 .abt-sct {
   background-color: #1c1a19;
@@ -371,6 +369,10 @@ section .skill-container {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+}
+
+.logo a:focus {
+  outline-color: #f4f1f0;
 }
 
 .item ul li:hover a {
