@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4ee8cfcba7.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="by">
     
     <div class="container">
 
@@ -22,14 +23,29 @@
                 <div class="toolbar">
                     <div class="logo"><a href="#">Emmykage</a> </div>
                   
-                    <ul> <li><a href="#work">Portfolio</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">contact</a></li>
+                    <ul class="links"> 
+                       
+                        <li><a onclick="showMenu()" href="#work">Portfolio</a></li>
+                        <li><a onclick="showMenu()" href="#about">About</a></li>
+                        <li><a onclick="showMenu()" href="#contact">contact</a></li>
+                        <li><a href="#"><img src="image/msessage_Button/Tertiary/Icons/Icon-Mail.svg" alt="Send me a mail"></a></li>
+
+                    </ul>
+                    <ul id="bLinks"> 
+                       
+                        <li><a  href="#work">Portfolio</a></li>
+                        <li><a  href="#about">About</a></li>
+                        <li><a  href="#contact">contact</a></li>
                         <li><a href="#"><img src="image/msessage_Button/Tertiary/Icons/Icon-Mail.svg" alt="Send me a mail"></a></li>
 
                     </ul>
                     
-                        <div class="menu-bar"><img src="Normal_button/Tertiary/Icons/Icon-Menu.png" alt="Open menu"></div> 
+                    <div class="menu-bar" ><i class="open fa fa-bars"></i>
+                            <!-- <i class=" close fa fa-solid fa-xmark">X</i> -->
+                    </div> 
+                       
+                        
+                        <!-- <div class="menu-bar close"><img src="./image/Vector.png" alt="Open menu"></div> -->
                 </div>
 
             </nav>
@@ -251,5 +267,7 @@
             </div>
         </section>
     </div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/4ee8cfcba7.js" crossorigin="anonymous"></script>
 </body>
 </html>

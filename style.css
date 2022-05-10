@@ -19,15 +19,24 @@ header {
   background-color: #3c3a39;
   margin: 0;
   width: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 nav {
   height: 100%;
   padding: 8px 14px;
   margin: 0;
+
+  /* position: relative; */
 }
 
 header nav .toolbar {
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   font-size: 18px;
@@ -51,6 +60,10 @@ header nav .toolbar {
   background-repeat: no-repeat;
   background-position: 125% 90%;
   background-size: 168px;
+}
+
+#bLinks {
+  display: none;
 }
 
 h1,
@@ -118,8 +131,19 @@ ul {
   padding-left: 0;
 }
 
-header nav .toolbar ul {
+header nav .toolbar .links {
   display: none;
+  justify-content: right;
+  position: absolute;
+  background-color: #3c3a39;
+  right: 0;
+  top: 20px;
+  width: 100%;
+  height: 80vh;
+  padding: 18px 10px;
+  z-index: 2;
+  transition: all 0.5s ease-out;
+  box-sizing: border-box;
 }
 
 .con-links li {
@@ -375,6 +399,11 @@ section .skill-container {
   outline-color: #f4f1f0;
 }
 
+.toolbar .links li a {
+  font-size: 30px;
+  font-weight: 700;
+}
+
 .item ul li:hover a {
   color: #3c3a39;
   transition: all 0.5s ease-out;
@@ -407,6 +436,18 @@ form {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 190px;
+}
+
+header nav .toolbar .links li {
+  padding: 18px 24px;
+
+  /* background-color: red; */
+  margin-bottom: 4px;
+  border-bottom: 2px solid #fff;
+}
+
+header nav .toolbar .links li:last-child {
+  display: none;
 }
 
 form .input {
@@ -502,17 +543,24 @@ textarea {
     margin-left: 124px;
   }
 
-  header nav .toolbar ul {
+  #bLinks {
     display: flex;
     height: 100%;
     justify-content: right;
     margin-top: 0;
     margin-bottom: 0;
     flex: 1;
+    position: static;
+    padding: 8px 16px;
+    z-index: 0;
   }
 
   .con-links li {
     margin: 0% 10px;
+  }
+
+  header nav .toolbar ul .fa {
+    margin-bottom: 24px;
   }
 
   header nav .toolbar ul li {
@@ -520,6 +568,7 @@ textarea {
     align-items: center;
     padding: 8px 34px;
     margin-right: 12px;
+    margin-bottom: 124px;
   }
 
   header nav .toolbar ul li::after {
@@ -545,7 +594,7 @@ textarea {
     text-decoration: none;
   }
 
-  .menu-bar img {
+  .menu-bar {
     display: none;
   }
 
@@ -710,7 +759,7 @@ textarea {
     margin-left: 0%;
     margin-top: 0;
     height: 3px;
-    border: 1px solid none;
+    border: 1px solid #fff;
     background-color: #212121;
   }
 
