@@ -7,6 +7,8 @@ body {
   width: 375px;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  position: relative;
 }
 
 section {
@@ -52,6 +54,7 @@ header nav .toolbar {
 .headline {
   background-color: #1c1a19;
   width: 100%;
+  height: 60vh;
   padding-top: 120px;
   padding-bottom: 70px;
   margin: 0;
@@ -162,6 +165,68 @@ header nav .toolbar .links {
 .headline ul li img {
   height: 24px;
 }
+
+/* ---------------------overlay ---------------------- */
+.overlay{
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0px;
+  background-color: blue;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  transform: scale(0);
+  transition: all 0.2s ease-in;
+
+}
+/* .overlay.active{
+  pointer-events: none;
+} */
+.overlay-content{
+  position: relative;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 24px 14px;
+  z-index: 2;
+  
+}
+.overlay-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 80%; */
+}
+.overlay-link{
+  display: flex;
+}
+.overlay-link li{
+  border: 1px solid black;
+  padding: 8px 12px;
+  margin-right: 8px;
+}
+.overlay h3, .overlay p {
+  color: #000;
+}
+.overlay .fa{
+  font-size: 24px;
+}
+.over-btn{
+  padding: 9px 16px;
+  margin-right: 8px;
+  height: 48px;
+  display:inline-flex;
+  align-items: center;
+  background: #FF6B00;
+  ;
+}
+.over-btn img{
+  margin-left: 14px;
+}
+
 
 /* -----------------work-section------------- */
 
@@ -841,4 +906,96 @@ textarea {
   .item.work-item-1 ul li a {
     color: #091e42;
   }
+  /* ---------------------overlay ---------------------- */
+.overlay-content{
+  position: relative;
+  height: 80%;
+  
+}
+.overlay-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: green; */
+  width: 90%;
+}
+.overlay-link{
+  display: flex;
+}
+.overlay-page{
+  display: flex;
+  justify-content:left;
+  padding: 0;
+ 
+  
+  height: 570px;
+
+}
+.overlay-page .image{
+    flex-basis: 50%;
+    background-color: red;
+    height: 100%;
+    align-content: left;
+   
+  
+
+  }
+  .overlay-page .image img{
+    width: 100%;
+    height: 100%;
+   
+    margin-left: 0;
+  }
+.overlay-page .content{
+  flex-basis: 40%;
+  padding-left: 24px;
+  padding-top: 0px;
+}
+
+
+.overlay-link li{
+  border: 1px solid black;
+  padding: 8px 12px;
+  margin-right: 8px;
+}
+.overlay h3{
+  /* background-color: blue; */
+  flex: 1;
+}
+.overlay p {
+  font-size: 16px;
+  line-height: 26px;
+  padding-top: 0%;
+  margin-top: 0px;;
+ 
+}
+.overlay h3, .overlay p {
+  color: #000;
+}
+.overlay .fa{
+  font-size: 24px;
+}
+.content{
+  position: relative;
+}
+.content ul{
+  position: absolute;
+  bottom: 0px;
+}
+.over-btn{
+  padding: 9px 16px;
+  
+  height: 48px;
+  display:inline-flex;
+  align-items: center;
+  background: #FF6B00;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+}
+
+.over-btn img{
+  margin-left: 14px;
+}
+
 }
