@@ -1,8 +1,8 @@
 var projectData = [{
     name: "School Website",
-    description: "A website built and designed to hold personal and public data of a suburban primary and secondary school",
+    description: "A desc website built and designed to hold personal and public data of a suburban primary and secondary school",
     featuredIimage: "image/Img_Placeholder.svg",
-    technologies: ["tech", "bootstrap"],
+    technologies: ["html","css", "tech", "bootstrap"],
     link: "live server",
     source: "source",
 }, {
@@ -46,7 +46,7 @@ var projectData = [{
 const modal = document.querySelector(".overlay");
 
 
-const modalOpen = (num = null) => {
+/* const modalOpen = (num = null) => {
     if (num != null) {
       const langs = projects[num].languages;
       let showLangs = '';
@@ -67,7 +67,7 @@ const modalOpen = (num = null) => {
         modal.classList.add('modal_show');
       }, 100);
     }
-  };
+  }; */
   
 
 
@@ -85,3 +85,19 @@ const modalOpen = (num = null) => {
 //     `
    
 // }
+
+/* Popup Code */
+
+function load_data(){
+    document.getElementById("popup_title").innerText=projectData[0].name;
+    document.getElementById("popup_language_first").innerText=projectData[0].technologies[0];
+    document.getElementById("popup_language_second").innerText=projectData[0].technologies[1];
+    document.getElementById("popup_language_third").innerText=projectData[0].technologies[2];
+    document.getElementById("popup_language_fourth").innerText=projectData[0].technologies[3];
+    document.getElementById("popup_image").innerText=projectData[0].featuredIimage;
+    document.getElementById("popup_description").innerText=projectData[0].description;
+
+}
+
+
+console.log(load_data());
