@@ -21,11 +21,6 @@ shomenu.addEventListener('click', showMenu);
 
 const overlay = document.querySelector('.overlay');
 
-// let buttonDisplay = document.querySelector(".project-btn");
-
-// showOverlay();
-// buttonDisplay.addEventListener("click", showOverlay);
-
 const closeDisplay = document.querySelector('.overlay .fa');
 
 function closeOverlay() {
@@ -33,64 +28,62 @@ function closeOverlay() {
 }
 closeDisplay.addEventListener('click', closeOverlay);
 
-// overlay.addEventListener("click", closeOverlay);
-
 const projectData = [{
   name: 'School Website',
-  description: 'A website built and designed to hold personal and public data of a suburban primary and secondary school',
+  description: 'A website built and designed to hold personal and public data of a suburban primary and secondary school Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
   featuredIimage: 'image/Img_Placeholder.svg',
-  technologies: ['html', 'css', 'tech', 'bootstrap'],
-  link: 'live server',
+  technologies: ['html', 'css', 'bootstrap'],
+  link: 'emmykage.github.io',
   source: 'source',
 }, {
   name: 'My Portfolio',
-  description: 'thie is my first project with javascript and html',
+  description: 'thie is my first project with javascript and html Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
   featuredIimage: 'image/Img_Placeholder_3.svg',
   technologies: ['css', 'bootsrtap', 'javascript'],
-  link: 'www.emmykage',
+  link: 'emmykage.github.io',
   source: 'www.github.com',
 }, {
-  name: 'Retail website',
-  description: 'thie is my first project with javascript and html',
+  name: 'Retail Store',
+  description: 'first project with javascript and html Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
   featuredIimage: 'image/Img_Placeholder_4.svg',
   technologies: ['css', 'bootsrtap', 'javascript'],
   link: 'www.emmykage',
   source: 'www.github.com',
 }, {
   name: 'Real Estate',
-  description: 'Real estate dipicts unit houses with descriptive captions',
+  description: 'Real estate dipicts unit houses with descriptive captions Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
   featuredIimage: 'image/Img_Placeholder_5.svg',
   technologies: ['css', 'bootsrtap', 'javascript'],
   link: 'www.emmykage',
   source: 'www.github.com',
 }, {
   name: 'Agrocity',
-  description: 'import and exports page website where buyers connect with local farmers to purchase food items',
+  description: 'import and exports page website where buyers connect with local farmers to purchase food items Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
   featuredIimage: 'image/Img_Placeholder_6.svg',
   technologies: ['css', 'bootsrtap', 'javascript'],
   link: 'www.emmykage',
   source: 'www.github.com',
 }, {
-  name: 'My Portfolio',
-  description: 'loremx20 thie is my first project with javascript and html ',
+  name: 'Kwik-E Mart',
+  description: 'loremx20 thie is my first project with javascript and html Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." ',
   featuredIimage: 'image/Img_Placeholder_7.svg',
   technologies: ['css', 'bootsrtap', 'javascript'],
   link: 'www.emmykage',
   source: 'www.github.com',
 }, {
-  name: 'My Portfolio',
-  description: 'loremx20 thie is my first project with javascript and html ',
+  name: 'Hospital',
+  description: 'loremx20 first project with javascript and html Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." ',
   featuredIimage: 'image/Img_Placeholder_7.svg',
   technologies: ['css', 'bootsrtap', 'javascript'],
   link: 'www.emmykage',
   source: 'www.github.com',
 },
 ];
+
 function showOverlay(x = null) {
   if (x != null) {
     overlay.style.transform = 'scale(1)';
     overlay.classList.add('active');
-    // loadData(x);
     document.getElementById('popupTitle').innerText = projectData[x].name;
 
     document.getElementById('popup_image').src = projectData[x].featuredIimage;
