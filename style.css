@@ -962,6 +962,8 @@ textarea {
     flex-basis: 50%;
     height: 100%;
     align-content: flex-start;
+    text-align: left;
+    background-color: #ff6b00;
   }
 
   .over-btn img {
