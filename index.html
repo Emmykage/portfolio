@@ -80,13 +80,12 @@
                 
         </section>
 
-                <!-- ------------overlay--------------- -->
-                <!-- popup start -->
+                <!-- popup  -->
         <div class="overlay">
             <div class="overlay-content">
                 <div class="overlay-header">
-                    <h3 class="overlay_title" id="popup_title">Multi Post Stories</h3>
-                    <i class="fa fa-times"></i>
+                    <h3 class="overlay_title" id="popupTitle">Multi Post Stories</h3>
+                    <i class="fa fa-times">&times;</i>
                     
                 </div>
                 <div>
@@ -97,15 +96,16 @@
                     </ul>
                 </div>
                 <div class="overlay-page">
-                    <div class="overlay_img image"><img id="popup_image" class="hero-img" src="./image/Snapshoot Portfolio.svg"></div>
+                    <div class="overlay_img image"><img id="popup_image" class="hero-img" src="./image/Snapshoot_Portfolio.svg" alt=" "></div>
                     
                     <div class="overlay_description content">
                         <p id="popup_description">
                             lLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
                         </p>
                         <ul>
-                            <button class="overlay_live over-btn">see Live <img src="./image/Icons/Icon-Export.svg"> </button>
-                            <button class="overlay_source over-btn">see source<img src="./image/Icons/Vector.svg"> </button>
+                            <li><a class="overlay_live over-btn" href="">see Live <img src="./image/Icons/Icon-Export.svg" alt=""> </a></li>
+                            <li><a class="overlay_source over-btn" href="">see source<img src="./image/Icons/Vector.svg" alt=""> </a></li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -139,12 +139,12 @@
                                 <li> <a href="#">Bootstrap</a></li>
                                 <li> <a href="#">Ruby</a></li>
                             </ul>
-                            <button class="project-btn-1" type="button"> See Project</button>
+                            <button  id="project-btn-1" class="project-btn" type="button" onclick="showOverlay(0)"> See Project</button>
                         </div>
                         </div>
                     <div class="item work-item-2 box">
                         <div class="item-display">
-                            <h3 name="header-3" id="heading" onclick="display(this.id)"> Profesional Art Printing Data</h3>
+                            <h3 id="heading"> Profesional Art Printing Data</h3>
                         <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                         <ul>
                             <li><a href="#">css</a></li>
@@ -153,7 +153,7 @@
                             <li> <a href="#">Ruby</a></li>
                         </ul>
                         </div>
-                        <button class="project-btn" type="button" id="btn-2" >See Project</button>
+                        <button class="project-btn" type="button" value="1" id="btn-2" onclick="showOverlay(1)">See Project</button>
                         
                     </div>
                     <div class="item work-item-3 no-btn box">
@@ -165,7 +165,7 @@
                             <li> <a href="#">Bootstrap</a></li>
                             <li> <a href="#">Ruby</a></li>
                         </ul>
-                        <button class="project-btn" type="button" id="btn-3">See Project</button>
+                        <button class="project-btn" type="button" id="btn-3" onclick="showOverlay(2)">See Project</button>
                        
                     </div>
                     <div class="item work-item-4 no-btn box">
@@ -177,7 +177,7 @@
                             <li> <a href="#">Bootstrap</a></li>
                             <li> <a href="#">Ruby</a></li>
                         </ul>
-                        <button class="project-btn" type="button" id="btn-4">See Project</button>
+                        <button class="project-btn" type="button" id="btn-4" onclick="showOverlay(3)">See Project</button>
                        
                     </div>
                     <div class="item work-item-5 no-btn box">
@@ -189,7 +189,7 @@
                             <li> <a href="#">Bootstrap</a></li>
                             <li> <a href="#">Ruby</a></li>
                         </ul>
-                        <button class="project-btn" type="button" id="btn-5" >See Project</button>
+                        <button class="project-btn" type="button" id="btn-5" onclick="showOverlay(4)">See Project</button>
                        
                     </div>
                     <div class="item work-item-6 no-btn box">
@@ -201,7 +201,7 @@
                             <li> <a href="#">Bootstrap</a></li>
                             <li> <a href="#">Ruby</a></li>
                         </ul>
-                        <button class="project-btn" type="button" id="btn-6">See Project</button>
+                        <button class="project-btn" type="button" id="btn-6" onclick="showOverlay(5)">See Project</button>
                        
                     </div>
                     <div class=" item work-item-7 no-btn box"  >
@@ -213,7 +213,7 @@
                             <li> <a href="#">Bootstrap</a></li>
                             <li> <a href="#">Ruby</a></li>
                         </ul>
-                        <button type="button" class="project-btn" id="btn-7">See Project</button>
+                        <button type="button" class="project-btn" id="btn-7" onclick="showOverlay(6)">See Project</button>
                        
                     </div>
                 </div>
@@ -306,8 +306,7 @@
                 </ul>
             </div>
         </section>
-        <!-- ----------popup and overlay-------------- -->
-       
+           
     </div>
     <script src="index.js"></script>
     <!-- <script src="script.js"></script> -->
