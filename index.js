@@ -23,6 +23,7 @@ const overlay = document.querySelector('.overlay');
 
 // let buttonDisplay = document.querySelector(".project-btn");
 
+// showOverlay();
 // buttonDisplay.addEventListener("click", showOverlay);
 
 const closeDisplay = document.querySelector('.overlay .fa');
@@ -38,7 +39,7 @@ const projectData = [{
   name: 'School Website',
   description: 'A website built and designed to hold personal and public data of a suburban primary and secondary school',
   featuredIimage: 'image/Img_Placeholder.svg',
-  technologies: ['html', 'css', 'bootstrap'],
+  technologies: ['html', 'css', 'tech', 'bootstrap'],
   link: 'live server',
   source: 'source',
 }, {
@@ -71,25 +72,34 @@ const projectData = [{
   source: 'www.github.com',
 }, {
   name: 'My Portfolio',
-  description: 'thie is my first project with javascript and html',
+  description: 'loremx20 thie is my first project with javascript and html ',
   featuredIimage: 'image/Img_Placeholder_7.svg',
-  technologies: ['css', 'react', 'javascript'],
+  technologies: ['css', 'bootsrtap', 'javascript'],
+  link: 'www.emmykage',
+  source: 'www.github.com',
+}, {
+  name: 'My Portfolio',
+  description: 'loremx20 thie is my first project with javascript and html ',
+  featuredIimage: 'image/Img_Placeholder_7.svg',
+  technologies: ['css', 'bootsrtap', 'javascript'],
   link: 'www.emmykage',
   source: 'www.github.com',
 },
 ];
-function loadData(x) {
-  document.getElementById('popupTitle').innerText = projectData[x].name;
-  document.getElementById('popup_language_first').innerText = projectData[x].technologies[0];
-  document.getElementById('popup_language_second').innerText = projectData[x].technologies[1];
-  document.getElementById('popup_language_third').innerText = projectData[x].technologies[2];
-  document.getElementById('popup_image').src = projectData[x].featuredIimage;
-  document.getElementById('popup_description').innerText = projectData[x].description;
-  document.querySelector('.overlay_live').href = projectData[x].link;
-  // document.getElementsByClassName().src = projectData[x].source;
-}
-function showOverlay(x) {
-  overlay.style.transform = 'scale(1)';
-  overlay.classList.add('active');
-  loadData(x);
-}
+function showOverlay(x = null) {
+  if (x != null) {
+    overlay.style.transform = 'scale(1)';
+    overlay.classList.add('active');
+    // loadData(x);
+    document.getElementById('popupTitle').innerText = projectData[x].name;
+
+    document.getElementById('popup_image').src = projectData[x].featuredIimage;
+    document.getElementById('popup_description').innerText = projectData[x].description;
+    document.querySelector('.overlay_live').href = projectData[x].link;
+    let someInformation = '';
+    projectData[x].techologies.forEach((element) => {
+      someInformation += `<li>${element}"</li>`;
+    });
+    document.getElementBuId('ul_id').innerJHTML = someInformation;
+  }
+}showOverlay();

@@ -23,9 +23,6 @@ header {
   width: 100%;
   position: relative;
 }
-.overlay-page ul li{
-  padding: 0;
-}
 
 a {
   text-decoration: none;
@@ -161,6 +158,12 @@ header nav .toolbar .links {
   padding: 8px 12px;
   margin-right: 8px;
 }
+
+.overlay-page ul li {
+  padding: 0;
+}
+
+
 
 .headline ul li {
   padding: 4px 8px;
@@ -384,7 +387,9 @@ hr {
 .item ul li a {
   color: #fff;
 }
-
+.overlay-page ul li a {
+  font-size: 20px;
+}
 /* .item ul li a:focus{
   border: ipx solid black
 } */
