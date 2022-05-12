@@ -163,8 +163,6 @@ header nav .toolbar .links {
   padding: 0;
 }
 
-
-
 .headline ul li {
   padding: 4px 8px;
   line-height: 39px;
@@ -387,9 +385,11 @@ hr {
 .item ul li a {
   color: #fff;
 }
+
 .overlay-page ul li a {
   font-size: 20px;
 }
+
 /* .item ul li a:focus{
   border: ipx solid black
 } */
