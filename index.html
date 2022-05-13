@@ -276,22 +276,22 @@
                 
                 <div class="input">
                     <label for="name">Name</label>
-                        <input name="name" id="name" type="text" placeholder="Full name" required minlength="30">
+                        <input name="name" id="name" type="text" placeholder="Full name" required minlength="30" onchange="saveData()" >
                     </div>
                     
 
                     
                 <div class="input">
                     <label for="email">Email </label>
-                        <input id="email" name="Email" type="email" placeholder="Email address" required>
+                        <input id="email" name="Email" type="email" placeholder="Email address" required onchange="saveData()">
                    
                     </div>
                 <div class="input text-input">
                     <label for="message">Message</label>
-                        <textarea id="message" maxlength="500" placeholder="Enter text here"></textarea>
+                        <textarea id="message" maxlength="500" placeholder="Enter text here" onchange="saveData()"></textarea>
                 </div>
                 <div class="form-submit">
-                    <button name="message" type="submit">Get in touch</button>
+                    <button name="message" type="submit" id="button">Get in touch</button>
                     <div id="error">please enter a valid name and make sure its in small letters</div>
 
                 </div>
