@@ -272,7 +272,7 @@
         <section class="contact-section" id="contact">
             <div class="contact">
                 <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-                <form action="https://formspree.io/f/xayvlole" method="post">
+                <form id="formId" action="https://formspree.io/f/xayvlole" method="post" novalidate>
                 
                 <div class="input">
                     <label for="name">Name</label>
@@ -290,7 +290,12 @@
                     <label for="message">Message</label>
                         <textarea id="message" maxlength="500" placeholder="Enter text here"></textarea>
                 </div>
-            <button name="message" type="submit">Get in touch</button>
+                <div class="form-control">
+                    <button name="message" type="submit">Get in touch</button>
+                    <div id="error">please enter a valid name and make sure its in small letters</div>
+
+                </div>
+           
                 </form>
                 <hr>
 
@@ -309,7 +314,7 @@
            
     </div>
     <script src="index.js"></script>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
     <!-- <script src="script.js"></script> -->
     <script src="https://kit.fontawesome.com/4ee8cfcba7.js" crossorigin="anonymous"></script>
 </body>

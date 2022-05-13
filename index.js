@@ -96,3 +96,18 @@ function showOverlay(x = null) {
     document.getElementBuId('ul_id').innerJHTML = someInformation;
   }
 }showOverlay();
+
+// -------------form validation-----------
+
+const form = document.getElementById('formId');
+const email = document.getElementById('email');
+const errormessage = document.getElementById('error');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (email.value !== email.value.toLowerCase()) {
+    errormessage.style.display = 'block';
+  } else {
+    form.submit();
+  }
+});
